@@ -17,7 +17,7 @@ routerProductos.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-/* ----------------------- Rutas ----------------------*/
+/* --------------------- Rutas ------------------------*/
 app.use('/api/productos', routerProductos);
 
 app.get('/', function(req,res){
@@ -25,7 +25,7 @@ app.get('/', function(req,res){
 })
 
 
-/* --------------------- Servidor ----------------------*/
+/* ------------------- Servidor -----------------------*/
 const PORT = 8080;
 const server = app.listen(PORT, ()=>{
     console.log(`Servidor escuchando en puerto ${PORT}`);
