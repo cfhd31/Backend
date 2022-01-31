@@ -10,7 +10,7 @@ getAll(){
         const nuevoObjeto = fs.readFileSync(this.ruta, "utf-8")
         return JSON.parse(nuevoObjeto)
     }catch(error){
-        return ["no llego nada"]
+        return [" "]
     }
 }
 
