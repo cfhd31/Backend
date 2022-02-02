@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
     res.render('inicio', { productos });
 });
 
-app.get('/resultados', (req, res) => {
-    res.render('resultados', { productos });
+app.get('/productos', (req, res) => {
+    res.render('productos', { productos });
 });
 
 app.post('/productos', (req, res) => {
