@@ -2,20 +2,17 @@
 const express = require('express');
 const productos = []
 
-
 /* ---------------- Instancia de express ----------------*/
 const app = express()
-
 
 /* -------------------- Middlewares ------------------- */
 app.use(express.urlencoded({ extended: true }))
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-
 /* --------------------- Rutas ------------------------*/
 app.get('/', (req, res) => {
-    res.render('inicio', { productos });
+    res.render('index', { productos });
 });
 
 app.get('/productos', (req, res) => {
@@ -26,7 +23,6 @@ app.post('/productos', (req, res) => {
     productos.push(req.body)
     res.redirect('/')
 });
-
 
 /* ------------------- Servidor -----------------------*/
 const PORT = 8080
