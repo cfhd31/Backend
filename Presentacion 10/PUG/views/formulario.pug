@@ -1,0 +1,26 @@
+extends  ./layouts
+
+block formulario 
+    div(class="col-3 mt-5 mx-auto")
+        div(class="badge alert-secondary mt-5 p-2 text-dark bg-opacity-10 border border-secondary")
+            h1( style="color:black;" class="mb-3") Agregar Productos
+            br
+            form(action="/productos" method="post")
+
+                div(class="form-group")
+                    label(for="nombre")
+                    input(id="nombre" placeholder="Nombre del producto" class="form-control" type="text" name="nombre " tabIndex="1" required autoFocus)
+
+                div(class="form-group")
+                    label(for="precio")
+                    input(id="precio" placeholder="Precio" class="form-control" type="text" name="precio" tabIndex="2" required)
+
+                div(class="form-group")
+                    label(for="foto")
+                    input(id="foto" placeholder="URL de la foto" class="form-control" type="text" name="foto" tabIndex="3" required)   
+
+                div(class="form-group")
+                    button(class="btn btn-success") Agregar Producto
+            div(class="d-grid mx-auto")   
+                button( class="btn btn-success" type="button") 
+                    a(href="/lista" style="color: black;") Ver Productos

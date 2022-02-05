@@ -1,0 +1,31 @@
+extends  ./layouts
+ 
+block lista
+    div(class="container mt-5")
+        div(class="jumbotron text-center border border-secondary")
+            h2(style="color: black") Vista de Productos
+            if productos.length > 0
+                div(class="table-responsive")
+                    table(class="table table-dark")
+                        tr
+                            th Nombre
+                            th Precio
+                            th Foto URL
+                            th
+                        
+
+                        each producto of productos
+                            tr
+                                td= `${producto.nombre}`
+                                td= `${producto.precio}`
+                                - var img = `${producto.foto}`
+                                td 
+                                    img(src=img style='display: inline-flex; width: 40px; height: 40px') 
+                                td Boton Borrar
+                                
+
+            else 
+                h3( style="color:red;") No se agrego ningun producto
+            div(class="d-grid mx-auto")
+                button( class="btn btn-success" type="button") 
+                    a(href="/" style="color: black;") Agregar mas producto

@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
     res.render('index', { productos });
 });
 
-app.get('/productos', (req, res) => {
-    res.render('productos', { productos });
+app.get('/lista', (req, res) => {
+    res.render('lista', { productos });
 });
 
 app.post('/productos', (req, res) => {

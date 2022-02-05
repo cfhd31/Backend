@@ -1,22 +1,19 @@
 <!-- Formulario -->
-<div class="container ">
-    <div class="row border  col-3 mt-5 mx-auto bg-primary p-2 text-dark bg-opacity-10">
         <h2 class="mb-3">Agregar Productos</h2>
 
         <form action="/productos" method="post" class="mb-3 ">
             <div class="mb-3 border bg-light">
-                <input placeholder="Nombre del producto" type="text" name="title" class="form-control" id="nombre" tabIndex="1" required autoFocus >
+                <input id="nombre" placeholder="Nombre del producto" type="text" name="nombre" class="form-control" tabIndex="1" required autoFocus >
             </div>
             <div class="mb-3 border bg-light">
-                <input placeholder="Precio" type="text" name="price" class="form-control" id="precio" tabIndex="2" required>
+                <input id="precio" placeholder="Precio" type="text" name="precio" class="form-control" tabIndex="2" required>
             </div>
             <div class="mb-3 border bg-light">
-                <input placeholder="URL de la foto" type="text" name="foto" class="form-control" id="foto" tabIndex="3" required>
+                <input id="foto" placeholder="URL de la foto" type="text" name="foto" class="form-control" tabIndex="3" required>
             </div>
-            <div class="d-grid  mx-auto">
-                <button class="btn btn-success" type="submit">Agregar Producto</button>
+            <div class="d-grid mx-auto">
+                <button class="btn btn-success"  type="submit" >Agregar Producto</button>
             </div>
         </form>
-    </div>
-</div>
+
 

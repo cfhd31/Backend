@@ -8,6 +8,7 @@
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Foto URL</th>
+                <th></th>
             </tr>
 
             <% for (const producto of productos) {%>   <!-- filas de productos -->
@@ -17,6 +18,7 @@
                     <td>
                         <img style="display: inline-flex; width: 40px; height: 40px" src="<%=producto.foto%>"/>
                     </td>
+                    <td>Boton Borrar</td>
                 </tr>
             <% } %>
         </table>
