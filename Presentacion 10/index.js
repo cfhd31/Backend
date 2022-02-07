@@ -43,6 +43,7 @@ async getById(numero) {
     console.log(msj);
 }
 
+//me sirve para el boton de borrar
 async deleteById(numero) {
     let contExistente = await this.getAll();
     const index = contExistente.findIndex((x) => x.id === numero);
@@ -66,7 +67,7 @@ async deleteById(numero) {
         console.log("No existe ese ID");
     }
 }
-
+//me sirve para el boton de borrar todo
 deleteAll() {
     let borrar = [];
   

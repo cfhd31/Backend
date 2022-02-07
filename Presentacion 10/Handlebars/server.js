@@ -18,8 +18,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.engine('hbs', exphbs.engine({
-    defaultLayout: 'main',
-    layoutsDir: path.join(app.get('views'), 'layouts'),
+    defaultLayout: 'layouts',
+    layoutsDir: path.join(app.get('views')),
     extname: 'hbs'
 }));
 
@@ -41,7 +41,7 @@ app.post('/productos', (req, res) => {
 });
 
 /* ---------------------- Servidor ----------------------*/
-const PORT = 7272;
+const PORT = 8080;
 const server = app.listen(PORT, ()=>{
     console.log(`Servidor escuchando en puerto ${PORT}`);
 })

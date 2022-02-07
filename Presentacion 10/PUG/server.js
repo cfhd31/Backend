@@ -15,6 +15,7 @@ const productos = []
 app.set('views', './views');
 app.set('view engine', 'pug');
 
+/* ---------------------- Rutas ----------------------*/
 app.get('/', (req, res) => {
     res.render('formulario.pug', {productos});
 });
@@ -28,6 +29,7 @@ app.post('/productos', (req, res) => {
     res.redirect('/')
 });
 
+/* ---------------------- Servidor ----------------------*/
 const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${server.address().port}`)
