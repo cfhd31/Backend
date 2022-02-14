@@ -1,8 +1,8 @@
 {
-  "name": "handlebars",
+  "name": "presentacion-12",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "probando.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
-    "path": "^0.12.7"
+    "hbs": "^4.2.0",
+    "node-fetch": "^3.2.0",
+    "socket.io": "^4.4.1"
   }
 }
