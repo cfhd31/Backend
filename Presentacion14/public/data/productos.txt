@@ -1,0 +1,29 @@
+[
+  {
+    "nombreProducto": "Rattlesnake",
+    "descripcion": "es una nave de rapida y versatil, perfecta para las fratas y naves capitales",
+    "fotoProducto": "https://wiki.eveuniversity.org/images/thumb/0/0f/Rattlesnake.jpg/256px-Rattlesnake.jpg",
+    "codigo": "00001",
+    "precioProducto": "4500",
+    "stock": "100",
+    "id": 1
+  },
+  {
+    "nombreProducto": "Nestor",
+    "descripcion": "es una nave de rapida y versatil, perfecta para las fratas y naves capitales",
+    "fotoProducto": "https://wiki.eveuniversity.org/images/thumb/7/70/Nestor.jpg/256px-Nestor.jpg",
+    "codigo": "0003",
+    "precioProducto": "14500",
+    "stock": "100",
+    "id": 2
+  },
+  {
+    "nombreProducto": "Barghest",
+    "descripcion": "es una nave de rapida y versatil, perfecta para las fratas y naves capitales",
+    "fotoProducto": "https://wiki.eveuniversity.org/images/thumb/b/bb/Barghest.jpg/256px-Barghest.jpg",
+    "codigo": "111",
+    "precioProducto": "13000",
+    "stock": "100",
+    "id": 3
+  }
+]

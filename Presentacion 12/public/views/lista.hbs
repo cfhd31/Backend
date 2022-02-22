@@ -25,6 +25,18 @@
         {{else}}
             <h3 style="color:red;" class="mb-5">No se agrego ningun producto</h3>
         {{/if}}
-
     </div>
+</div>
+
+<div class="">
+    {{#each productos}}
+        <div class="card" style="width: 18rem;">
+            <img style="display: inline-flex" src="{{foto}}"/>
+            <div class="card-body">
+                <h5 class="card-title"><b>{{nombre}}</b></h5>
+                <p class="card-text">Precio: {{precio}}</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    {{/each}}
 </div>
