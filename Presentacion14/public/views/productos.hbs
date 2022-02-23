@@ -1,4 +1,4 @@
-{{> headers title="Productos" }}
+{{> headers title="Productos" logo="../eve0.png" }}
 
 <div class="table-responsive">
   <div id="contenedor">
@@ -9,23 +9,23 @@
         <div
           class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
           {{#each productos }}
-          <a class="" onclick="detail({{id}})">
-            <div class="col">
-              <div class="card h-100 shadow-sm">
-                <img src="{{fotoProducto}}" class="card-img-top" alt="Imagen"/>
-                <div class="card-body">
-                  <h5><b>Nombre:</b> {{nombreProducto}}</h5>
-                    <p>{{descripcion}}</p>
-                    <h5>Isk: {{precioProducto}}</h5>
-                    <div class="text-center my-4">
-                        <a class="btn btn-warning" onclick="detail({{id}})">  Detalle</a>
-                        <a class="btn btn-warning" onclick="agregar({{id}})"> Agregar Carrito</a>
-                        <a class="btn btn-warning" onclick="deleting({{id}})">Eliminar</a>
-                        <a class="btn btn-warning" onclick="edit({{id}})">    Editar</a>
+            <a class="" onclick="detail({{id}})">
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="{{fotoProducto}}" class="card-img-top" alt="Imagen"/>
+                  <div class="card-body">
+                    <h5><b>Nombre:</b> {{nombreProducto}}</h5>
+                      <p>{{descripcion}}</p>
+                      <h5>Isk: {{precioProducto}}</h5>
+                      <div class="text-center my-4">
+                          <a class="btn btn-warning" onclick="detail({{id}})">  Detalle</a>
+                          <a class="btn btn-warning" onclick="agregar({{id}})"> Agregar Carrito</a>
+                          <a class="btn btn-warning" onclick="deleting({{id}})">Eliminar</a>
+                          <a class="btn btn-warning" onclick="edit({{id}})">    Editar</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </a>
           {{/each}}
         </div>

@@ -2,6 +2,22 @@
   {
     "BuyerID": 1,
     "Fecha": "Wed Feb 23 2022",
-    "Productos": []
+    "Productos": [
+      {
+        "nombreProducto": "Nestor",
+        "descripcion": "es una nave de rapida y versatil, perfecta para las fratas y naves capitales",
+        "fotoProducto": "https://wiki.eveuniversity.org/images/thumb/7/70/Nestor.jpg/256px-Nestor.jpg",
+        "codigo": "0003",
+        "precioProducto": "14500",
+        "stock": "100",
+        "idProducto": 2,
+        "productDate": "Wed Feb 23 2022",
+        "Quantity": 5
+      },
+      {
+        "productDate": "Wed Feb 23 2022",
+        "Quantity": 2
+      }
+    ]
   }
 ]

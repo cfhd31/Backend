@@ -1,7 +1,7 @@
-{{> headers title="Detalle"}}
+{{> headers title="Detalle" logo="../eve0.png"}}
 
 <div class="table-responsive">
-   <div class="container">
+  <div class="container">
     <h2 class="text-center" style="color: rgb(0, 0, 0)">Detalle</h2>
 
     {{#if error}} 
@@ -10,29 +10,29 @@
     {{else}} 
       <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-            <div class="col">
-              <div class="card h-100 shadow-sm">
-                <img src="{{producto.fotoProducto}}" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                  <div class="clearfix mb-3">
-                    <span class="float-start badge rounded-pill bg-primary">{{producto.nombreProducto}}</span>
-                    <span class="float-end price-hp">{{producto.precio}}</span>
-                  </div>
-                  <h5 class="card-title">{{producto.descripcion}}</h5>
-                  <h5>Stock: {{producto.stock}}</h5>
-                  <h5>Codigo: {{producto.codigo}}</h5>
-                     
-                  <div class="text-center my-4">
-                    <a class="btn btn-warning" onclick="agregar({{id}})">Carrito</a>
-                  </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="{{producto.fotoProducto}}" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-primary">{{producto.nombreProducto}}</span>
+                  <span class="float-end price-hp">{{producto.precio}}</span>
+                </div>
+                <h5 class="card-title">{{producto.descripcion}}</h5>
+                <h5>Stock: {{producto.stock}}</h5>
+                <h5>Codigo: {{producto.codigo}}</h5>
+                    
+                <div class="text-center my-4">
+                  <a class="btn btn-warning" onclick="agregar({{id}})">Agregar Carrito</a>
                   <a class="btn btn-warning" onclick="edit({{producto.id}})">Editar</a>
+                  <a href="/productos" class="btn btn-dark btn-block my-2">Volver</a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     {{/if}} 
-
   </div>
 </div>
 {{> footer }}
