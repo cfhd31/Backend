@@ -6,7 +6,7 @@ const { Server: IOServer } = require("socket.io");
 
 /* ---------------------- Rutas ----------------------*/
 const routerProductos = require("./public/rutas/productos");
-const routerCarrito = require("./public/rutas/carrito"); //Segmento de rutas 1
+const routerCarrito = require("./public/rutas/carrito");
 
 const app = express();
 const hbs = require('hbs');

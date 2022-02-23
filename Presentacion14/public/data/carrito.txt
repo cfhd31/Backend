@@ -1,0 +1,7 @@
+[
+  {
+    "BuyerID": 1,
+    "Fecha": "Wed Feb 23 2022",
+    "Productos": []
+  }
+]

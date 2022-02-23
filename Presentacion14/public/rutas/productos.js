@@ -2,7 +2,7 @@ const express = require("express");
 const res = require("express/lib/response");
 const routerProductos = express.Router();
 
-const Productos = require("../public/modulos/Productos.js");
+const Productos = require("../modulos/Productos");
 const ProductClass = new Productos();
 
 let admin = true;
@@ -38,13 +38,13 @@ routerProductos.get("/:id?", async (req, res) => {
   try {
     const seleccion = await ProductClass.getById(parseInt(id));
     console.log(seleccion);
-    res.render("productoDetalle", {
+    res.render("productoDetallado", {
       producto: seleccion,
       error: false,
     });
   } catch (error) {
     console.log("error", error);
-    res.render("productoDetalle", {
+    res.render("productoDetallado", {
       error: true,
       mensaje: "No se encuentra el producto",
     });
@@ -103,7 +103,7 @@ routerProductos.get("/edit/:id", async (req, res) => {
     const id = req.params.id;
     try {
       let data = { producto: ProductClass.getById(parseInt(id)) };
-      res.render("editProduct", data);
+      res.render("editarProducto", data);
     } catch (error) {
       res.send({
         code: 400,

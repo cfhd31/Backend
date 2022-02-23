@@ -1,10 +1,10 @@
 const express = require("express");
 const routerCarrito = express.Router();
 
-const Carrito = require("../public/modulos/Carrito.js");
+const Carrito = require("../modulos/Carrito");
 const CarritoClass = new Carrito();
 
-const Productos = require("../public/modulos/Productos.js");
+const Productos = require("../modulos/Productos");
 const ProductClass = new Productos();
 
 routerCarrito.post("/", async (req, res) => {
