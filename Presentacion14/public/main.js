@@ -1,5 +1,5 @@
 ///PRODUCTOS
-async function detail(value) {
+async function detalle(value) {
   console.log(`hola`);
   await fetch(`/api/productos/${value}`, { method: "GET" })
 

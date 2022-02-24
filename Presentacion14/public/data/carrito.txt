@@ -12,9 +12,16 @@
         "stock": "100",
         "idProducto": 2,
         "productDate": "Wed Feb 23 2022",
-        "Quantity": 5
+        "Quantity": 1
       },
       {
+        "nombreProducto": "Barghest",
+        "descripcion": "es una nave de rapida y versatil, perfecta para las fratas y naves capitales",
+        "fotoProducto": "https://wiki.eveuniversity.org/images/thumb/b/bb/Barghest.jpg/256px-Barghest.jpg",
+        "codigo": "111",
+        "precioProducto": "13000",
+        "stock": "100",
+        "idProducto": 3,
         "productDate": "Wed Feb 23 2022",
         "Quantity": 2
       }
