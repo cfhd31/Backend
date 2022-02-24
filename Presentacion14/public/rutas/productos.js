@@ -37,7 +37,7 @@ routerProductos.get("/:id?", async (req, res) => {
   const id = req.params.id;
   try {
     const seleccion = await ProductClass.getById(parseInt(id));
-    console.log(seleccion);
+    console.log("seleccion", seleccion);
     res.render("productoDetallado", {
       producto: seleccion,
       error: false,
@@ -67,8 +67,6 @@ routerProductos.post("/", async (req, res) => {
     });
   }
 });
-
-//DELETE  '/:id' - Borra un producto por su id (disponible para administradores)
 
 routerProductos.delete("/:id", async (req, res) => {
   if (admin == true) {

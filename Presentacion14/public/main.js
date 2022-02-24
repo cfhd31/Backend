@@ -72,34 +72,36 @@ async function actualizar(value) {
 ///CARRITO
 
 async function agregar(idProducto) {
-  if (!localStorage.getItem("my_token")) {
-    await fetch(`/api/carrito/`, { method: "POST" })
-      .then((response) => {
-        return response.json();
-      })
-
-      .then(async (data) => {
-        if (data.estado == true) {
-          window.localStorage.setItem("my_token", data.id);
-          await fetch(`/api/carrito/${data.id}/productos/${idProducto}`, {
-            method: "POST",
-          });
-        }
-        console.log("error");
+  console.log(idProducto);
+  if (localStorage.getItem("NumeroCarrito")) {
+      const idCart = window.localStorage.getItem("NumeroCarrito");
+      await fetch(`/api/carrito/${idCart}/productos/${idProducto}`, {
+        method: "POST",
       });
+      console.log("carrito existente");
   } else {
-    const idCart = window.localStorage.getItem("my_token");
-    await fetch(`/api/carrito/${idCart}/productos/${idProducto}`, {
-      method: "POST",
-    });
-    console.log("carrito existente");
+      await fetch(`/api/carrito/`, { method: "POST" })
+        .then((response) => {
+          return response.json();
+        })
+
+        .then(async (data) => {
+          if (data.estado == true) {
+            window.localStorage.setItem("NumeroCarrito", data.id);
+            await fetch(`/api/carrito/${data.id}/productos/${idProducto}`, {
+              method: "POST",
+            });
+          }
+          console.log("error");
+        });
   }
 }
 
+
 function cart() {
   let idCart = 0;
-  localStorage.getItem("my_token")
-    ? (idCart = window.localStorage.getItem("my_token"))
+  localStorage.getItem("NumeroCarrito")
+    ? (idCart = window.localStorage.getItem("NumeroCarrito"))
     : (idCart = 0);
   console.log(idCart);
   window.location.href = `/api/carrito/${idCart}/productos`;

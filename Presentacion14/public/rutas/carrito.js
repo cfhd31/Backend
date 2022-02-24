@@ -47,6 +47,7 @@ routerCarrito.delete("/:id", async (req, res) => {
 routerCarrito.get("/:id/productos", async (req, res) => {
   const id = req.params.id;
 
+
   try {
     const carrito = CarritoClass.getById(parseInt(id));
     let list = carrito.Productos.map((item) => {
