@@ -15,7 +15,7 @@ const path = require("path");
 app.use(express.static(__dirname +'/public' ))
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/public/views");
-hbs.registerPartials(__dirname + "/public/views/partials", function (err) {});
+hbs.registerPartials(__dirname + "/partes", function (err) {});
 app.use(express.static(__dirname));
 app.use(bodyParser.json())
 
