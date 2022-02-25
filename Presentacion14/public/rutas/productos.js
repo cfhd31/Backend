@@ -7,19 +7,16 @@ const ProductClass = new Productos();
 
 let admin = true;
 
-
-  routerProductos.get("/nuevo", function (req, res) {
-    if (admin == true) {
-    res.render("nuevoProducto")
-  } else {
-    res.json({
-      error: -1,
-      descripcion: `ruta ${"/"} método POST no autorizado`,
-    });
-    console.log("error autorizacion")}
-  })
-
-
+routerProductos.get("/nuevo", function (req, res) {
+  if (admin == true) {
+  res.render("nuevoProducto")
+} else {
+  res.json({
+    error: -1,
+    descripcion: `ruta ${"/"} método POST no autorizado`,
+  });
+  console.log("error autorizacion")}
+})
 
 routerProductos.get("/", (req, res) => {
   try {
