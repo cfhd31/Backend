@@ -1,7 +1,6 @@
 const knexLib = require('knex');
 
 class Productos {
-
     constructor(options){
         this.knex = knexLib(options);
     }

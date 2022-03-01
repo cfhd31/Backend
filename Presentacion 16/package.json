@@ -1,15 +1,22 @@
 {
-  "name": "clase-16",
+  "name": "presentacion-16",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "knex": "^1.0.3",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "knex": "^1.0.3",
-    "mysql": "^2.18.1"
-  }
+  "license": "ISC"
 }
