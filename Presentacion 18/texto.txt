@@ -1,0 +1,249 @@
+
+> show databases
+admin    0.000GB
+clase18  0.000GB
+config   0.000GB
+empresa  0.000GB
+local    0.000GB
+
+> use ecommerce
+switched to db ecommerce
+
+> db
+ecommerce
+
+> db.createCollection("productos")
+{ "ok" : 1 }
+> db.createCollection("mensaje")
+{ "ok" : 1 }
+
+> show collections
+mensaje
+productos
+
+> show dbs
+admin      0.000GB
+config     0.000GB
+ecommerce  0.000GB
+local      0.000GB
+
+
+///////////////// 1 y 2 ///////////////
+
+db.productos.insertMany([
+    {nombre: "lapiz",      descripcion: "utiles escolares", url: "https://.", codigo: 25, precio: 1200, stock: 250}, 
+    {nombre: "goma",       descripcion: "utiles escolares", url: "https://.", codigo: 26, precio: 800, stock: 5},
+    {nombre: "lapicera",   descripcion: "utiles escolares", url: "https://.", codigo: 27, precio: 4500, stock: 100},
+    {nombre: "regla",      descripcion: "utiles escolares", url: "https://.", codigo: 28, precio: 5000, stock: 100},
+    {nombre: "escuadra",   descripcion: "utiles escolares", url: "https://.", codigo: 29, precio: 350, stock: 50},
+    {nombre: "crayones",   descripcion: "utiles escolares", url: "https://.", codigo: 30, precio: 1200, stock: 20},
+    {nombre: "corrector",  descripcion: "utiles escolares", url: "https://.", codigo: 31, precio: 45, stock: 35},
+    {nombre: "usb",        descripcion: "utiles escolares", url: "https://.", codigo: 32, precio: 3548, stock: 300},
+    {nombre: "resaltador", descripcion: "utiles escolares", url: "https://.", codigo: 33, precio: 1956, stock: 5},
+    {nombre: "cuter",      descripcion: "utiles escolares", url: "https://.", codigo: 34, precio: 1746, stock: 1}
+])
+{
+    "acknowledged" : true,
+    "insertedIds" : [
+        ObjectId("6222afb3501bb4e606726021"),
+        ObjectId("6222afb3501bb4e606726022"),
+        ObjectId("6222afb3501bb4e606726023"),
+        ObjectId("6222afb3501bb4e606726024"),
+        ObjectId("6222afb3501bb4e606726025"),
+        ObjectId("6222afb3501bb4e606726026"),
+        ObjectId("6222afb3501bb4e606726027"),
+        ObjectId("6222afb3501bb4e606726028"),
+        ObjectId("6222afb3501bb4e606726029"),
+        ObjectId("6222afb3501bb4e60672602a")
+    ]
+}
+
+db.mensaje.insertMany([
+    {autor: "juan0@gmail.com", fecha: new Date("2014, 12, 20"), msg: "Hola, necesito comprar utiles escolares"}, 
+    {autor: "juan1@gmail.com", fecha: new Date("2014, 12, 21"), msg: "que utiles necesita"}, 
+    {autor: "juan2@gmail.com", fecha: new Date("2014, 12, 22"), msg: "dame todo"}, 
+    {autor: "juan3@gmail.com", fecha: new Date("2014, 12, 23"), msg: "no me joda señora, digame que necesita"}, 
+    {autor: "juan4@gmail.com", fecha: new Date("2014, 12, 24"), msg: "contesteme bien viejo de mi...."},
+    {autor: "juan5@gmail.com", fecha: new Date("2014, 12, 25"), msg: "vayase a cagar"}, 
+    {autor: "juan6@gmail.com", fecha: new Date("2014, 12, 26"), msg: "vayase usted a cagar"}, 
+    {autor: "juan7@gmail.com", fecha: new Date("2014, 12, 27"), msg: "y puedo seguir asi"}, 
+    {autor: "juan8@gmail.com", fecha: new Date("2014, 12, 28"), msg: "infinitamente"}, 
+    {autor: "juan9@gmail.com", fecha: new Date("2014, 12, 29"), msg: "ya no se que poner jaja algoa asi fue la converscion de la peluqueria jaja"}
+])
+{
+    "acknowledged" : true,
+    "insertedIds" : [
+            ObjectId("6222b331501bb4e606726036"),
+            ObjectId("6222b331501bb4e606726037"),
+            ObjectId("6222b331501bb4e606726038"),
+            ObjectId("6222b331501bb4e606726039"),
+            ObjectId("6222b331501bb4e60672603a"),
+            ObjectId("6222b331501bb4e60672603b"),
+            ObjectId("6222b331501bb4e60672603c"),
+            ObjectId("6222b331501bb4e60672603d"),
+            ObjectId("6222b331501bb4e60672603e"),
+            ObjectId("6222b331501bb4e60672603f")
+    ]
+}
+
+///////////////////////   3   ////////////////// 
+> db.productos.find()
+{ "_id" : ObjectId("6222afb3501bb4e606726021"), "nombre" : "lapiz", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 25, "precio" : 1200, "stock" : 250 }
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 26, "precio" : 800, "stock" : 5 }
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726024"), "nombre" : "regla", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 28, "precio" : 5000, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726025"), "nombre" : "escuadra", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 29, "precio" : 350, "stock" : 50 }
+{ "_id" : ObjectId("6222afb3501bb4e606726026"), "nombre" : "crayones", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 30, "precio" : 1200, "stock" : 20 }
+{ "_id" : ObjectId("6222afb3501bb4e606726027"), "nombre" : "corrector", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 31, "precio" : 45, "stock" : 35 }
+{ "_id" : ObjectId("6222afb3501bb4e606726028"), "nombre" : "usb", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 32, "precio" : 3548, "stock" : 300 }
+{ "_id" : ObjectId("6222afb3501bb4e606726029"), "nombre" : "resaltador", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 33, "precio" : 1956, "stock" : 5 }
+{ "_id" : ObjectId("6222afb3501bb4e60672602a"), "nombre" : "cuter", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 1746, "stock" : 1 }
+
+> db.mensaje.find()
+{ "_id" : ObjectId("6222b331501bb4e606726036"), "autor" : "juan0@gmail.com", "fecha" : ISODate("2014-12-20T03:00:00Z"), "msg" : "Hola, necesito comprar utiles escolares" }
+{ "_id" : ObjectId("6222b331501bb4e606726037"), "autor" : "juan1@gmail.com", "fecha" : ISODate("2014-12-21T03:00:00Z"), "msg" : "que utiles necesita" }
+{ "_id" : ObjectId("6222b331501bb4e606726038"), "autor" : "juan2@gmail.com", "fecha" : ISODate("2014-12-22T03:00:00Z"), "msg" : "dame todo" }
+{ "_id" : ObjectId("6222b331501bb4e606726039"), "autor" : "juan3@gmail.com", "fecha" : ISODate("2014-12-23T03:00:00Z"), "msg" : "no me joda señora, digame que necesita" }
+{ "_id" : ObjectId("6222b331501bb4e60672603a"), "autor" : "juan4@gmail.com", "fecha" : ISODate("2014-12-24T03:00:00Z"), "msg" : "contesteme bien viejo de mi...." }
+{ "_id" : ObjectId("6222b331501bb4e60672603b"), "autor" : "juan5@gmail.com", "fecha" : ISODate("2014-12-25T03:00:00Z"), "msg" : "vayase a cagar" }
+{ "_id" : ObjectId("6222b331501bb4e60672603c"), "autor" : "juan6@gmail.com", "fecha" : ISODate("2014-12-26T03:00:00Z"), "msg" : "vayase usted a cagar" }
+{ "_id" : ObjectId("6222b331501bb4e60672603d"), "autor" : "juan7@gmail.com", "fecha" : ISODate("2014-12-27T03:00:00Z"), "msg" : "y puedo seguir asi" }
+{ "_id" : ObjectId("6222b331501bb4e60672603e"), "autor" : "juan8@gmail.com", "fecha" : ISODate("2014-12-28T03:00:00Z"), "msg" : "infinitamente" }
+{ "_id" : ObjectId("6222b331501bb4e60672603f"), "autor" : "juan9@gmail.com", "fecha" : ISODate("2014-12-29T03:00:00Z"), "msg" : "ya no se que poner jaja algoa asi fue la converscion de la peluqueria jaja" }
+
+
+////////////////////////  4  ////////////////////
+> db.productos.estimatedDocumentCount()
+10
+
+> db.mensaje.estimatedDocumentCount()
+10
+
+///////////////////////  5-a  /////////////////////
+> db.productos.insertOne({nombre: "sacapuntas", descripcion: "utiles escolares", url: "https://.", codigo: 34, precio: 2746, stock: 80})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6222b6fe501bb4e606726040")
+}
+
+
+///////////////////////  5-b  /////////////////////
+> db.productos.find({nombre: "lapicera"})
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 100 }
+
+I)
+> db.productos.find({precio: {$lt: 1000}})
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 26, "precio" : 800, "stock" : 5 }
+{ "_id" : ObjectId("6222afb3501bb4e606726025"), "nombre" : "escuadra", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 29, "precio" : 350, "stock" : 50 }
+{ "_id" : ObjectId("6222afb3501bb4e606726027"), "nombre" : "corrector", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 31, "precio" : 45, "stock" : 35 }
+
+II)
+> db.productos.find({precio: {$gt: 1000, $lt: 3000}})
+{ "_id" : ObjectId("6222afb3501bb4e606726021"), "nombre" : "lapiz", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 25, "precio" : 1200, "stock" : 250 }
+{ "_id" : ObjectId("6222afb3501bb4e606726026"), "nombre" : "crayones", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 30, "precio" : 1200, "stock" : 20 }
+{ "_id" : ObjectId("6222afb3501bb4e606726029"), "nombre" : "resaltador", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 33, "precio" : 1956, "stock" : 5 }
+{ "_id" : ObjectId("6222afb3501bb4e60672602a"), "nombre" : "cuter", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 1746, "stock" : 1 }
+{ "_id" : ObjectId("6222b6fe501bb4e606726040"), "nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 80 }
+
+III)
+> db.productos.find({precio: {$gt: 3000}})
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726024"), "nombre" : "regla", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 28, "precio" : 5000, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726028"), "nombre" : "usb", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 32, "precio" : 3548, "stock" : 300 }
+
+IV)
+> db.productos.find().sort({precio: 1}).skip(2).limit(1)
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 26, "precio" : 800, "stock" : 5 }
+> db.productos.find({}, {"nombre": 1 }).sort({precio: 1}).skip(2).limit(1)
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma" }
+
+///////////////////////  5-c  /////////////////////
+> db.productos.updateMany({}, {$set: {"stock": 100}})
+{ "acknowledged" : true, "matchedCount" : 11, "modifiedCount" : 9 }
+
+> db.productos.find()
+{ "_id" : ObjectId("6222afb3501bb4e606726021"), "nombre" : "lapiz", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 25, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 26, "precio" : 800, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726024"), "nombre" : "regla", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 28, "precio" : 5000, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726025"), "nombre" : "escuadra", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 29, "precio" : 350, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726026"), "nombre" : "crayones", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 30, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726027"), "nombre" : "corrector", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 31, "precio" : 45, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726028"), "nombre" : "usb", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 32, "precio" : 3548, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726029"), "nombre" : "resaltador", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 33, "precio" : 1956, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e60672602a"), "nombre" : "cuter", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 1746, "stock" : 100 }
+{ "_id" : ObjectId("6222b6fe501bb4e606726040"), "nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 100 }
+
+///////////////////////  5-d  /////////////////////
+> db.productos.updateMany({"precio": {$gt: 4000}}, {$set: {"stock": 0}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+
+> db.productos.find()
+{ "_id" : ObjectId("6222afb3501bb4e606726021"), "nombre" : "lapiz", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 25, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726022"), "nombre" : "goma", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 26, "precio" : 800, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 0 }
+{ "_id" : ObjectId("6222afb3501bb4e606726024"), "nombre" : "regla", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 28, "precio" : 5000, "stock" : 0 }
+{ "_id" : ObjectId("6222afb3501bb4e606726025"), "nombre" : "escuadra", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 29, "precio" : 350, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726026"), "nombre" : "crayones", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 30, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726027"), "nombre" : "corrector", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 31, "precio" : 45, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726028"), "nombre" : "usb", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 32, "precio" : 3548, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726029"), "nombre" : "resaltador", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 33, "precio" : 1956, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e60672602a"), "nombre" : "cuter", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 1746, "stock" : 100 }
+{ "_id" : ObjectId("6222b6fe501bb4e606726040"), "nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 100 }
+
+
+///////////////////////  5-e  /////////////////////
+> db.productos.deleteMany({precio: {$lt: 1000}})
+{ "acknowledged" : true, "deletedCount" : 3 }
+
+> db.productos.find()
+{ "_id" : ObjectId("6222afb3501bb4e606726021"), "nombre" : "lapiz", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 25, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726023"), "nombre" : "lapicera", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 27, "precio" : 4500, "stock" : 0 }
+{ "_id" : ObjectId("6222afb3501bb4e606726024"), "nombre" : "regla", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 28, "precio" : 5000, "stock" : 0 }
+{ "_id" : ObjectId("6222afb3501bb4e606726026"), "nombre" : "crayones", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 30, "precio" : 1200, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726028"), "nombre" : "usb", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 32, "precio" : 3548, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e606726029"), "nombre" : "resaltador", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 33, "precio" : 1956, "stock" : 100 }
+{ "_id" : ObjectId("6222afb3501bb4e60672602a"), "nombre" : "cuter", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 1746, "stock" : 100 }
+{ "_id" : ObjectId("6222b6fe501bb4e606726040"), "nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 100 }
+
+
+///////////////////////  6  /////////////////////
+> db.createUser({user: "pepe", pwd: "asd456", roles: [{role: "read", db: "ecommerce"}]})
+Successfully added user: {
+        "user" : "pepe",
+        "roles" : [
+                {
+                        "role" : "read",
+                        "db" : "ecommerce"
+                }
+        ]
+}
+
+C:\Users\CFHD3>mongo -u pepe
+MongoDB shell version v5.0.6
+Enter password:
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a5505a8c-2d60-4ff1-8d88-a16f3364c088") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+
+> show dbs
+admin      0.000GB
+config     0.000GB
+ecommerce  0.000GB
+local      0.000GB
+test       0.000GB
+
+> db.products.insertOne({"nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 100})
+uncaught exception: WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"25a4b53f-1a3e-47ad-bc67-56c8643fb4ce\") }, $db: \"ecommerce\" }",
+        "code" : 13,
+        "codeName" : "Unauthorized"
+
