@@ -30,7 +30,7 @@ io.on("connection", async (socket) => {
 
   socket.on("newProduct", async (product) => {
     await apiProducts.save(product);
-    io.sockets.emit("products", await apiProducts.listAll()); //Actualización de la vista de productos
+    io.sockets.emit("products", await apiProducts.listAll()); //Actualización la vista de productos
   });
 
 

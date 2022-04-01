@@ -192,7 +192,7 @@ IV)
 { "_id" : ObjectId("6222b6fe501bb4e606726040"), "nombre" : "sacapuntas", "descripcion" : "utiles escolares", "url" : "https://.", "codigo" : 34, "precio" : 2746, "stock" : 100 }
 
 
-///////////////////////  5-e  /////////////////////
+//////////////////////  5-e  /////////////////////
 > db.productos.deleteMany({precio: {$lt: 1000}})
 { "acknowledged" : true, "deletedCount" : 3 }
 

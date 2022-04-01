@@ -1,0 +1,37 @@
+{{> headers title="Nuevo Productos" logo="../eve0.png"}}
+
+<div class="container ">
+  <div class="row">
+    <div class="col-4 mt-5 mx-auto">
+      <div class="badge alert-secondary mt-5 p-2 text-dark bg-opacity-10 border border-secondary">
+        <h2 style="color:black;" class="mb-3">Agregar Productos</h2>
+
+        <form method="POST" action="/api/productos">
+          <div class="form-group">
+            <input id="nombreProducto" placeholder="Nombre" className="form-control" type="text" name="nombreProducto" tabIndex="1" required autoFocus/>
+          </div>
+          <div class="form-group">
+            <textarea id="descripcion" className="form-control" name="descripcion" placeholder="Descripción" tabIndex="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <input id="fotoProducto" className="form-control" type="text" name="fotoProducto" placeholder="Foto URL" tabIndex="3" required/>
+          </div>
+          <div class="form-group">
+            <input id="codigo" className="form-control" type="text" name="codigo" placeholder="Codigo" tabIndex="4" required/>
+          </div>
+          <div class="form-group">
+            <input id="precioProducto" className="form-control" type="number" name="precioProducto" placeholder="Precio" tabIndex="5" required/>
+          </div>
+          <div class="form-group">
+            <input id="stock" className="form-control" type="number" name="stock" placeholder="Stock" tabIndex="6" required/>
+          </div>
+
+          <input type="submit" class="btn btn-dark btn-block" value="Agregar" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{> footer }}

@@ -6,21 +6,21 @@ class Persona {
         this.mascotas = mascotas;
     }
 
-    getFullName(){                       //muestra nombre completo
+    getFullName(){                       //Muestra nombre completo
         console.log(`El nombre completo es: ${this.nombre} ${this.apellido}.`);
     }
 
-    addMascota(mascotas){                //agrega mascota
+    addMascota(mascotas){                //Agrega mascota
         this.mascotas.push(mascotas);
         console.log(`Las mascotas son: ${this.mascotas}.`)
     }
 
-    countMascotas(){                     //contador de mascota
+    countMascotas(){                     //Contador de mascota
         let contadorMascota = this.mascotas.length
         console.log(`Cantidad de mascotas: ${contadorMascota}.`)
     }
 
-    addBook(nombreLibro, autorLibro){    //agrega un libro
+    addBook(nombreLibro, autorLibro){    //Agrega un libro
         this.libros.push(
             {
                 titulo: nombreLibro,

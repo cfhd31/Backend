@@ -1,0 +1,59 @@
+
+    <!-- Chat -->
+    <div class="container ">
+        <div class="row">
+
+            <div class=" col-7 mt-5 mx-auto">
+                <div class="jumbotron alert-secondary mt-5 p-2 text-dark bg-opacity-10 border border-secondary text-center">
+                    <h2 class="mb-3">Sala de Chat</h2>
+                    <form onsubmit="return enviarMensaje()">
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Ingrese su email" class="form-control" required/>
+                        </div>
+                        <div id="contenedorMensaje" style="min-height: 130px; background-color: white; padding: 10px"></div>
+                        <div class="form-group mt-2">
+                            <input type="text" id="mensaje" placeholder="mensaje" class="form-control" />
+                            <input type="submit" value="Enviar"class="btn btn-success mt-2"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="col-7 mt-5 mx-auto">
+        <div class="jumbotron alert-secondary mt-5 p-2 text-dark bg-opacity-10 border border-secondary text-center">
+    
+            <h2 style="color: rgb(0, 0, 0)" class="mb-3">Mensajes</h2>
+            <div id="title"></div>
+    
+            <form onsubmit="return enviarMensaje()" class="">
+                    <div class="form-group mb-3 mt-3">
+                        <input id="email"placeholder="email"className="form-control"type="email"name="email" required />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="nombre"placeholder="nombre"className="form-control"type="text"name="nombre" required/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="apellido"placeholder="apellido"className="form-control"type="text"name="apellido"/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="edad"placeholder="edad"className="form-control"type="number"name="edad"/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="alias"placeholder="alias"className="form-control"type="text"name="alias"/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="avatar"placeholder="avatar"className="form-control"type="text"name="avatar"/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="textoMensaje"placeholder="texto"className="form-control"type="text"name="textoMensaje" style="min-height: 130px; background-color: white; padding: 10px"/>
+                    </div>
+                    <input type="submit" value="Enviar" />
+               
+            </form>
+            <br />
+            <div id="contenedorMensaje"></div>
+        </div>
+    </div>

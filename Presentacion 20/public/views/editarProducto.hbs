@@ -1,0 +1,34 @@
+{{> headers title="Productos" logo="../eve0.png"}}
+ 
+<div class="container ">
+    <div class="row">
+        <div class="col-6 mt-5 mx-auto">
+            <div class="badge alert-secondary mt-5 p-2 text-dark bg-opacity-10 border border-secondary">
+              <h2 style="color:black;" class="mb-3">Modificar Producto</h2>
+                <form id="editar" data-id={{producto.id}}>
+                  <div class="form-group">
+                    <input id="nombreProducto" placeholder="Nombre" className="form-control" type="text" name="nombreProducto" value="{{producto.nombreProducto}}" tabIndex="1" required autoFocus/>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="descripcion" className="form-control" name="descripcion" placeholder="Descripción" value="{{producto.descripcion}}" tabIndex="2" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input id="fotoProducto" className="form-control" type="text" name="fotoProducto" placeholder="Foto URL" value="{{producto.fotoProducto}}" tabIndex="3" required/>
+                  </div>
+                  <div class="form-group">
+                    <input id="codigo" className="form-control" type="text" name="codigo" placeholder="Codigo" value="{{producto.codigo}}" tabIndex="4" required/>
+                  </div>
+                  <div class="form-group">
+                    <input id="precioProducto" className="form-control" type="number" name="precioProducto" placeholder="Precio" value="{{producto.precio}}" tabIndex="5" required/>
+                  </div>
+                  <div class="form-group">
+                    <input id="stock" className="form-control" type="number" name="stock" placeholder="Stock" value="{{producto.stock}}" tabIndex="6" required/>
+                  </div>
+                  <a href="/" class="btn btn-dark btn-block my-2">Volver</a>
+                  <a class="btn btn-warning" onclick="deleting('{{id}}')">Eliminar</a>
+                  <a class="btn btn-primary btn-block"  onclick="actualizar('{{id}}')">Actualizar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

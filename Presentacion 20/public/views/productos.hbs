@@ -1,0 +1,28 @@
+{{> headers title="Productos" logo="../eve0.png" }}
+
+<div class="table-responsive">
+  <div id="contenedor">
+      <h2 class="text-center" style="color: rgb(0, 0, 0)">Vista de Productos</h2>
+      <div class="card-columns">
+        {{#each productos }}
+          <a onclick="detalle({{id}})">
+            <div class="card text-center">
+              <img src="{{producto.fotoProducto}}" class="card-img-top" alt="Imagen"/>
+              <div class="card-body">
+                <h5 class="card-title "><b>Nombre:</b> {{producto.nombreProducto}}</h5>
+                <p class="card-text">{{producto.descripcion}}</p>
+                <h5 class="">Isk: {{producto.precioProducto}}</h5>
+                <div class="text-center my-4">
+                  <a class="btn btn-success" onclick="detail({{id}})"> Detalle</a>
+                  <a class="btn btn-danger"  onclick="deleting({{id}})">Eliminar</a>
+                  <a class="btn btn-primary" onclick="edit({{id}})">    Editar</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        {{/each}}
+      </div>
+  </div>
+</div>
+
+{{> footer }}

@@ -19,7 +19,7 @@ hbs.registerPartials(__dirname + "/partes", function (err) {});
 app.use(express.static(__dirname));
 app.use(bodyParser.json())
 
-/* ---------------------- Middlewares ---------------------- */
+/* ------------------- Middlewares ---------------------- */
 app.use(morgan('tiny'));
 app.use(bodyParser.urlencoded({ extended: true }));
 

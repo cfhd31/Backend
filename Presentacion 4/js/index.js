@@ -88,7 +88,7 @@ archivo.save({
     url:"https://imageserver.eveonline.com/Render/33468_512.png",
 });
 
-//archivo.getById(2);
+//archivo.getById(3);
 //archivo.getAll();
 //archivo.deleteById(8);
 //archivo.deleteAll()

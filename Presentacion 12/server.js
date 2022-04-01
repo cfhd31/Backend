@@ -4,7 +4,7 @@ const { Server: HttpServer } = require("http");
 const { Server: IOServer } = require("socket.io");
 const fs = require("fs");
 
-/* ---------------------- Instancia de express ----------------------*/
+/* ------------------ Instancia de express ----------------------*/
 const app = express();
 const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);

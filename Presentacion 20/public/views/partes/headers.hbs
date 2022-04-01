@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>{{title}}</title>
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+       <a class="navbar-brand" href="/"><img src="{{logo}}""../../eve0.png" alt="Logo" class="img-fluid" style="max-width: 45%"/></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" id="home" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="home" href="/api/productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="add" href="/api/productos/nuevo">Agregar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EditarProd</a>
+          </li> 
+        </ul>
+
+        <div class="d-flex"> 
+          <button class="btn btn-light ms-3">Login</button>
+        </div>
+
+        <div>
+          <a class="nav-link" id="add" onclick="cart()">
+            <img src='../../carrito.png' className="carrito " alt="imagen carrito" style='display: inline-flex; width: 30px; height: 30px'/>
+              <span className="contador">0  </span> 
+            <i className="fas fa-shopping-cart"></i>
+          </a> 
+          {{!-- <a class="nav-link" id="add" onclick="cart()">Carrito</a> --}}
+      </div>
+    </div>
+  </div>
+</nav> 

@@ -1,7 +1,4 @@
-const config = {
-  mongodb: {
-    url: "mongodb://localhost:27017/ecommerce",
-  },
+const options = {
   firebase: {
     type: "service_account",
     project_id: "backend-7312e",
@@ -14,23 +11,6 @@ const config = {
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
     client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-myz3p%40backend-7312e.iam.gserviceaccount.com"
   },
-
-  mariaDB: {
-    client: "mysql",
-    connection: {
-      host: "localhost",
-      user: "usershop",
-      password: "some_pass",
-      database: "productos",
-    },
-  },
-  sqlite2: {
-    client: "better-sqlite3",
-    connection: {
-      filename: "./DB/ecommerce.sqlite",
-    },
-    useNullAsDefault: true,
-  },
 };
 
-export default config;
+export default options;
