@@ -13,7 +13,7 @@ import express from "express";
 
 
 /* ---------------------- Servidor ----------------------*/
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8080;
 const server = httpServer.listen(PORT, () => {
   console.log(`Servidor escuchando en puerto ${PORT}`);
 });
