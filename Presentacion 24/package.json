@@ -2,7 +2,6 @@
   "type": "module",
   "name": "presentacion-24",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +27,7 @@
     "mysql": "^2.18.1",
     "normalizr": "^3.6.2",
     "socket.io": "^4.4.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
