@@ -12,7 +12,7 @@ const options = {
     client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zdpbp%40backend-1cf21.iam.gserviceaccount.com",
   },
     mongoAtlas:{
-      mongosh: "mongodb+srv://coderhouse:<password>@cluster0.elazh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
+      mongosh: "mongodb+srv://coderhouse:coderhouse@cluster0.elazh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
     }
   
   };
