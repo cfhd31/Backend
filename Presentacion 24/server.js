@@ -50,7 +50,6 @@ app.set("view engine", "hbs");
 app.set("views", __dirname + "/public/views");
 hbs.registerPartials(__dirname + "/public/views/partials", function (err) {});
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
