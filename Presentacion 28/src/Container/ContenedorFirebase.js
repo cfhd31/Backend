@@ -1,9 +1,12 @@
-import config from "../utils/options.js";
 import admin from "firebase-admin";
+import dotenv from "dotenv";
+dotenv.config();
 
 try {
   admin.initializeApp({
-    credential: admin.credential.cert(config.firebase),
+    apiKey: process.env.F_APP_KEY_ID,
+    appId: process.env.F_PRIVATE_KEY_ID,
+    projectId: process.env.F_PROJECT_ID,
   });
 } catch (error) {
   console.log(error);
@@ -28,7 +31,6 @@ class ContenedorFirebase {
 
       let arrayMensajes = { id: "mensajes", mensajes: response };
       return arrayMensajes;
- 
     } catch (error) {
       console.log(error);
       return {

@@ -8,8 +8,7 @@ function generateAuthToken(nombre) {
 }
 
 function auth(req, res, next) {
-  const authHeader =
-    req.headers["authorization"] || req.headers["Authorization"] || "";
+  const authHeader = req.headers["authorization"] || req.headers["Authorization"] || "";
   console.log("req.headers", req.headers);
   console.log("Authheader", authHeader);
 
@@ -41,4 +40,4 @@ function auth(req, res, next) {
   next();
 }
 
-export {generateAuthToken, auth};
+export { generateAuthToken, auth};
