@@ -7,8 +7,7 @@ process.on('message', msg => {
     }, 5000);
 })
    
-  
-  function getRandom(cantidad) {
+function getRandom(cantidad) {
     console.log("cantidad", cantidad);
     let max = 1000;
   
@@ -18,7 +17,6 @@ process.on('message', msg => {
         valores.push(value);
     }
    
-   
     let repetidos = {};
      
     valores.forEach(function(numero){
@@ -26,4 +24,4 @@ process.on('message', msg => {
     });
       
     return repetidos;
-  }
+}

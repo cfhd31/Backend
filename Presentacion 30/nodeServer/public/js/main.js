@@ -27,9 +27,7 @@ function enviarMensaje() {
   return false;
 }
 const schemaAuthor = new normalizr.schema.Entity(
-  "author",
-  {},
-  { idAttribute: "id_email" }
+  "author", {}, { idAttribute: "id_email" }
 );
 
 const schemaMensaje = new normalizr.schema.Entity("post", {

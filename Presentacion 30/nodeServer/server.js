@@ -1,28 +1,17 @@
-/*--------------------------- Modulos ------------------------------*/
-import express from "express";
-import session from "express-session";
-import cookieParser from "cookie-parser";
-import path from "path";
-
-import passport from "passport";
-import productosTestRuta from "./rutas/productosTestRuta.js";
-import autentificacionRuta from "./rutas/autentificacionRuta.js";
-import infoRuta from "./rutas/infoRuta.js";
-import { createServer } from "http";
-import { Server } from "socket.io";
-import MensajesDAO from "./src/DAO/firebase.dao.js";
-import hbs from "hbs";
-import bodyParser from "body-parser";
-import apiRandomRuta from "./rutas/apiRandomRuta.js";
-
-const usuarios = []
-const mensajeClass = new MensajesDAO();
-
+import cookieParser   from 'cookie-parser';
+import session  from 'express-session';
+import passport  from 'passport';
+import express from 'express';
+import autentificacionRuta  from './rutas/autentificacionRuta.js';
+import productosTestRuta  from './rutas/productosTestRuta.js';
+import infoRuta  from './rutas/infoRuta.js';
+import apiRandomRuta  from './rutas/apiRandomRuta.js';
+import bodyParser  from 'body-parser';
+import hbs from 'hbs';
+import cluster from "cluster";
+import os from "os";
 
 const app = express();
-const httpServer = new createServer(app);
-const io = new Server(httpServer);
-
 
 /*----------------------------- Session ------------------------------*/
 app.use(cookieParser());
@@ -43,7 +32,9 @@ app.use(function(req, res, next){
   next();
 });
 
+import path from "path";
 const __dirname = path.resolve();
+ 
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/public/views");
@@ -54,49 +45,34 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 /*---------------------------- Rutas --------------------------------*/
 app.use("/", autentificacionRuta);
 app.use("/", productosTestRuta);
 app.use("/info", infoRuta);
-app.use("/api/randoms", apiRandomRuta);
-app.get("/chat", (req, res) => {
-  res.render("chat");
-});
+app.use("/api/random", apiRandomRuta);
 
-/*------------------------- Mensaje Socket -------------------------*/
-io.on("connection", async (socket) => {
-  console.log(`Nuevo cliente conectado ${socket.id}`);
-
-  socket.on("mensajeNuevo", async (msg) => {
-    await mensajeClass.guardar(msg);
-    const mensajeGuardados = await mensajeClass.mostrarTodos();
-
-    const normalizar = normalizedHolding(mensajeGuardados);
-    const longO = JSON.stringify(mensajeGuardados).length;
-    const longN = JSON.stringify(normalizar).length;
-    const porcentaje = (longN * 100) / longO;
-
-    socket.emit("mensajes", {
-      normalizedHolding: normalizar,
-      porcentaje: porcentaje,
-    });
+const numCPUs =  os.cpus().length;
+ 
+const PORT = 8085;
+if (cluster.isMaster) {
+  console.log(`Master ${process.pid} is running`);
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`worker ${worker.process.pid} died`);
   });
-});
+}
+else{
+  app.listen(PORT, err =>{
+    err ?
+    console.log("Error in server setup") :
+    console.log(`Worker ${process.pid} started`);
+  });
+}
 
-/* ---------------------- Servidor ----------------------*/
-const PORT = parseInt(process.argv[2]) || 8080;
-
-app.get('/', (req, res)=>{
-    res.send(`Servidor express en ${PORT} - PID ${process.pid} - ${new Date().toLocaleString()}`)
-})
-
-app.listen(PORT, err => {
-    if (!err) console.log(`Servidor express escuchando en el puerto ${PORT} - PID WORKER ${process.pid}`)
-});
-
-
-
-
-
-
+//PASOS A SEGUIR: 
+                  //pm2 start server.js --name="Server1" --watch -- port=8081 
+                  //pm2 start server.js --name="Server3" --watch -i max
+                  //pm2 monit
+                  //pm2 kill

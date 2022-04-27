@@ -1,14 +1,11 @@
 import { normalize, schema } from "normalizr";
 
 const schemaAuthor = new schema.Entity(
-  "author",
-  {},
-  { idAttribute: "id_email" }
+  "author", {}, { idAttribute: "id_email" }
 );
 
 const schemaMensaje = new schema.Entity(
-  "post",
-  { author: schemaAuthor } 
+  "post", { author: schemaAuthor } 
 );
 
 const schemaMensajes = new schema.Entity("posts", {

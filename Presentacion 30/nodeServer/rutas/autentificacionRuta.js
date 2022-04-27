@@ -2,6 +2,7 @@ import express from "express";
 import passport from "passport";
 import { Strategy } from "passport-facebook";
 import dotenv from "dotenv";
+
 const FacebookStrategy = Strategy;
 dotenv.config()
 
@@ -19,7 +20,7 @@ passport.use(
     {
       clientID: FACE_APP_ID,
       clientSecret: FACE_APP_SECRET,
-      callbackURL: "http://localhost:8080/auth/facebook/callback",
+      callbackURL: "http://localhost:8085/auth/facebook/callback",
       profileFields: ["id", "displayName", "photos", "email"],
     },
 
@@ -46,7 +47,6 @@ autentificacionRuta.get("/datos", (req, res) => {
       req.user.contador = 0;
     }
     req.user.contador++;
-
     req.session.nombre = req.user.displayName;
     req.session.foto = req.user.photos[0].value;
     res.redirect("/");
@@ -57,7 +57,6 @@ autentificacionRuta.get("/datos", (req, res) => {
 });
 
 autentificacionRuta.get("/logout", (req, res) => {
-  
   req.logout();
   req.session.destroy();
   res.redirect("/");
@@ -75,3 +74,5 @@ autentificacionRuta.get(
 );
 
 export default autentificacionRuta;
+
+

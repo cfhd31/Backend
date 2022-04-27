@@ -1,5 +1,4 @@
 import express from "express";
-import minimist from "minimist";
 import dotenv from "dotenv";
 import os from "os"
 dotenv.config();
@@ -8,10 +7,7 @@ const infoRuta = express.Router();
 
 const numCPUs = os.cpus().length
 
-
-
 infoRuta.get("/", (req, res) => {
-
   let argumentos= [];
    process.argv.forEach((val, index) => {
     argumentos+=`${index}: ${val}`;
