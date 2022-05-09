@@ -1,0 +1,2 @@
+2022/04/13 22:19:54 [error] 14748#5988: *1 CreateFile() "C:\Users\CFHD3\Desktop\CURSO\Backend\nginx-1.21.6/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/04/16 12:03:10 [error] 14748#5988: *17 "C:\Users\CFHD3\Desktop\CURSO\Backend\nginx-1.21.6/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.0.151, server: localhost, request: "GET /HNAP1/ HTTP/1.1", host: "192.168.0.151"
