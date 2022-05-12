@@ -1,0 +1,33 @@
+{{> headers title="Lista de Productos" }}
+<div class="container">
+    <div id="contenedor" class="jumbotron text-center border border-secondary">
+        <h2 style="color: black" class="">Lista de Productos</h2>
+        {{#if productos.length}}
+            <div class="table-responsive">
+                <table class="table table-striped table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Foto URL</th>
+                    </tr>
+                    {{#each productos}}
+                        <tr>
+                            <td><b>{{nombre}}</b></td>
+                            <td>{{precio}}</td>
+                            <td>
+                                <img style="display: inline-flex; width: 50px; height: 50px" src="{{foto}}"/>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </table>
+            </div>
+        {{else}}
+            <h3 style="color:red;" class="mb-5">No se agrego ningun producto</h3>
+        {{/if}}
+    </div>
+</div>
+
+{{> footer }}
+
+            
+
