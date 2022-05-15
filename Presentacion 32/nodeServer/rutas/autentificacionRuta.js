@@ -20,7 +20,7 @@ passport.use(
     {
       clientID: FACE_APP_ID,
       clientSecret: FACE_APP_SECRET,
-      callbackURL: "http://localhost:8085/auth/facebook/callback",
+      callbackURL: "http://localhost:8080/auth/facebook/callback",
       profileFields: ["id", "displayName", "photos", "email"],
     },
 
