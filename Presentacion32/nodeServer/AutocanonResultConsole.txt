@@ -1,0 +1,197 @@
+Statistical profiling result from isolate-0000016326E1A180-9172-v8.log, (614 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    546   88.9%          C:\WINDOWS\SYSTEM32\ntdll.dll
+     67   10.9%          C:\Program Files\nodejs\node.exe
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.2%  100.0%  LazyCompile: *hidden internal/errors.js:286:25
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+      1    0.2%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+      2    0.3%  200.0%  GC
+    613   99.8%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    546   88.9%  C:\WINDOWS\SYSTEM32\ntdll.dll
+      6    1.1%    C:\Program Files\nodejs\node.exe
+      2   33.3%      LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1   50.0%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-HAET2J5G.mjs:1:3759
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-HAET2J5G.mjs:1:15935
+      1   50.0%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B4H4ZFLQ.mjs:1:175225
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B4H4ZFLQ.mjs:1:228081
+      1   16.7%      LazyCompile: ~lazyrouter C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\application.js:137:37
+      1  100.0%        LazyCompile: ~use C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\application.js:187:23
+      1  100.0%          Script: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/server.js:1:1
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1   16.7%      LazyCompile: ~NodeError internal/errors.js:257:16
+      1  100.0%        LazyCompile: ~onParseError internal/url.js:258:22
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~URL internal/url.js:327:14
+      1   16.7%      LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/server.js:114:42
+      1  100.0%        LazyCompile: ~onceWrapper events.js:477:21
+      1  100.0%          LazyCompile: ~emit events.js:325:44
+      1  100.0%            LazyCompile: ~emitListeningNT net.js:1349:25
+      1   16.7%      C:\Program Files\nodejs\node.exe
+      1  100.0%        LazyCompile: ~stat internal/modules/cjs/loader.js:133:14
+      1  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:801:35
+
+     67   10.9%  C:\Program Files\nodejs\node.exe
+     57   85.1%    C:\Program Files\nodejs\node.exe
+      9   15.8%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:969:18
+      9  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1022:37
+      9  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      9  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      7   12.3%      LazyCompile: ~moduleStrategy internal/modules/esm/translators.js:136:56
+      7  100.0%        C:\Program Files\nodejs\node.exe
+      7   12.3%      LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PSLVEIW3.mjs:1:84737
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PSLVEIW3.mjs:1:85267
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-NZAQ6SGE.mjs:1:121024
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-NZAQ6SGE.mjs:1:148859
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-M2XTFO6Z.mjs:1:33475
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-M2XTFO6Z.mjs:1:34592
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:92219
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:453536
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:453383
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:453536
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-7DDX6SC6.mjs:1:7447
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-7DDX6SC6.mjs:1:21837
+      1   14.3%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-5LYSASYE.mjs:1:77874
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-5LYSASYE.mjs:1:78432
+      6   10.5%      LazyCompile: ~stat internal/modules/cjs/loader.js:133:14
+      4   66.7%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      4  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:801:35
+      4  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:709:24
+      2   33.3%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:339:17
+      2  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:355:23
+      1   50.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:293:20
+      1   50.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      6   10.5%      LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:270:27
+      6  100.0%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:303:29
+      1   16.7%          LazyCompile: ~initializeReport internal/bootstrap/pre_execution.js:167:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:20:36
+      1   16.7%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:270:27
+      1   16.7%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1   16.7%          Eval: ~<anonymous> crypto.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:270:27
+      1   16.7%          Eval: ~<anonymous> _tls_wrap.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:270:27
+      1   16.7%          Eval: ~<anonymous> _http_client.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:270:27
+      5    8.8%      LazyCompile: ~openSync fs.js:489:18
+      5  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+      5  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      5  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      4    7.0%      LazyCompile: ~realpathSync fs.js:1718:22
+      2   50.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:348:20
+      2  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:339:17
+      1   50.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:293:20
+      1   50.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:355:23
+      2   50.0%        LazyCompile: ~defaultResolve internal/modules/esm/resolve.js:747:24
+      2  100.0%          LazyCompile: ~resolve internal/modules/esm/loader.js:83:16
+      2  100.0%            LazyCompile: ~getModuleJob internal/modules/esm/loader.js:240:21
+      2    3.5%      LazyCompile: ~tryStatSync fs.js:354:21
+      2  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+      2  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      2  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      2    3.5%      LazyCompile: ~read internal/modules/package_json_reader.js:16:14
+      2  100.0%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:245:21
+      2  100.0%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:427:24
+      2  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      1    1.8%      LazyCompile: ~statSync fs.js:1119:18
+      1  100.0%        LazyCompile: ~tryStatSync internal/modules/esm/resolve.js:77:21
+      1  100.0%          LazyCompile: ~finalizeResolution internal/modules/esm/resolve.js:249:28
+      1  100.0%            LazyCompile: ~moduleResolve internal/modules/esm/resolve.js:684:23
+      1    1.8%      LazyCompile: ~setTimeout timers.js:134:20
+      1  100.0%        LazyCompile: ~forEachAsync C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\foreachasync\forEachAsync.js:5:24
+      1  100.0%          LazyCompile: ~Walker._wReadFiles C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\walk\lib\walk.js:139:43
+      1  100.0%            LazyCompile: ~Walker._wReaddirHandler C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\walk\lib\walk.js:158:48
+      1    1.8%      LazyCompile: ~readSync fs.js:577:18
+      1  100.0%        LazyCompile: ~tryReadSync fs.js:379:21
+      1  100.0%          LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1    1.8%      LazyCompile: ~getOptions internal/fs/utils.js:285:20
+      1  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      1    1.8%      LazyCompile: ~closeSync C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\graceful-fs\graceful-fs.js:72:24
+      1  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      1    1.8%      LazyCompile: ~URL internal/url.js:327:14
+      1  100.0%        LazyCompile: ~defaultGetSource internal/modules/esm/get_source.js:24:32
+      1  100.0%          LazyCompile: ~moduleStrategy internal/modules/esm/translators.js:136:56
+      1  100.0%            LazyCompile: ~ModuleJob internal/modules/esm/module_job.js:35:14
+      1    1.8%      LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      1  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:709:24
+      1  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:949:36
+      1  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:87:31
+      1    1.8%      LazyCompile: *resolve path.js:145:10
+      1  100.0%        LazyCompile: ~toNamespacedPath path.js:581:19
+      1  100.0%          LazyCompile: ~stat internal/modules/cjs/loader.js:133:14
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      1    1.8%      Eval: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\normalizr\dist\normalizr.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1022:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      1    1.5%    LazyCompile: ~retry C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\graceful-fs\graceful-fs.js:378:16
+      1  100.0%      LazyCompile: ~resetQueue C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\graceful-fs\graceful-fs.js:364:21
+      1  100.0%        LazyCompile: ~closeSync C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\graceful-fs\graceful-fs.js:72:24
+      1  100.0%          LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1    1.5%    LazyCompile: ~readPackage internal/modules/cjs/loader.js:245:21
+      1  100.0%      LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:276:26
+      1  100.0%        LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      1  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:709:24
+      1    1.5%    LazyCompile: ~read internal/fs/promises.js:352:20
+      1  100.0%      LazyCompile: ~readFileHandle internal/fs/promises.js:277:30
+      1  100.0%        C:\Program Files\nodejs\node.exe
+      1    1.5%    LazyCompile: ~onParseError internal/url.js:258:22
+      1  100.0%      C:\Program Files\nodejs\node.exe
+      1  100.0%        LazyCompile: ~URL internal/url.js:327:14
+      1  100.0%          LazyCompile: ~defaultResolve internal/modules/esm/resolve.js:747:24
+      1  100.0%            LazyCompile: ~resolve internal/modules/esm/loader.js:83:16
+      1    1.5%    LazyCompile: ~multiplication32 file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-VXZJBRMI.mjs:1:466
+      1  100.0%      LazyCompile: ~initGenrand file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-VXZJBRMI.mjs:1:575
+      1  100.0%        LazyCompile: ~r file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-VXZJBRMI.mjs:1:2653
+      1  100.0%          LazyCompile: ~Ft file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:4376
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    1.5%    LazyCompile: ~NodeError internal/errors.js:257:16
+      1  100.0%      LazyCompile: ~onParseError internal/url.js:258:22
+      1  100.0%        C:\Program Files\nodejs\node.exe
+      1  100.0%          LazyCompile: ~URL internal/url.js:327:14
+      1  100.0%            LazyCompile: ~defaultResolve internal/modules/esm/resolve.js:747:24
+      1    1.5%    LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      1  100.0%      LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:801:35
+      1  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:709:24
+      1  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:949:36
+      1  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:87:31
+

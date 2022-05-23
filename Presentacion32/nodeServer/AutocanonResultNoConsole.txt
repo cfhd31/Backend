@@ -1,0 +1,450 @@
+Statistical profiling result from isolate-0000022ECE00D9E0-17116-v8.log, (20180 ticks, 3 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  18965   94.0%          C:\WINDOWS\SYSTEM32\ntdll.dll
+   1009    5.0%          C:\Program Files\nodejs\node.exe
+      1    0.0%          C:\WINDOWS\system32\mswsock.dll
+      1    0.0%          C:\WINDOWS\System32\KERNELBASE.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     20    0.1%    9.8%  LazyCompile: *wrap C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+     16    0.1%    7.8%  LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+     13    0.1%    6.4%  LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+     11    0.1%    5.4%  LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+      8    0.0%    3.9%  LazyCompile: *castChunk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:52:19
+      6    0.0%    2.9%  LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      6    0.0%    2.9%  LazyCompile: *anonymous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:12:42
+      5    0.0%    2.5%  LazyCompile: *resolve path.js:145:10
+      5    0.0%    2.5%  LazyCompile: *normalize path.js:284:12
+      5    0.0%    2.5%  LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      5    0.0%    2.5%  LazyCompile: *generateList C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:143:38
+      4    0.0%    2.0%  LazyCompile: *middleware C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:32:20
+      3    0.0%    1.5%  RegExp: (?:\r\n?|\n).*
+      3    0.0%    1.5%  LazyCompile: *setupHelperArgs C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1104:44
+      3    0.0%    1.5%  LazyCompile: *resolvePath C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      3    0.0%    1.5%  LazyCompile: *anonymous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:549:49
+      3    0.0%    1.5%  LazyCompile: *_storeHeader _http_outgoing.js:362:22
+      3    0.0%    1.5%  LazyCompile: *SourceNode C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:35:20
+      3    0.0%    1.5%  LazyCompile: *Program C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:113:28
+      3    0.0%    1.5%  LazyCompile: *<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:174:29
+      2    0.0%    1.0%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      2    0.0%    1.0%  RegExp: ^(?:\))
+      2    0.0%    1.0%  RegExp: \r?\n\s*?$
+      2    0.0%    1.0%  LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      2    0.0%    1.0%  LazyCompile: *setupParams C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1034:36
+      2    0.0%    1.0%  LazyCompile: *preparePath C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:63:21
+      2    0.0%    1.0%  LazyCompile: *onstat C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\send\index.js:721:33
+      2    0.0%    1.0%  LazyCompile: *get internal/streams/duplex.js:94:8
+      2    0.0%    1.0%  LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2    0.0%    1.0%  LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:63:28
+      2    0.0%    1.0%  LazyCompile: *WhitespaceControl.Program C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:19:48
+      1    0.0%    0.5%  RegExp: ^\s*?\r?\n
+      1    0.0%    0.5%  RegExp: ^(?:as\s+\|)
+      1    0.0%    0.5%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.5%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    0.5%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.5%  RegExp: ^(?:[\/.])
+      1    0.0%    0.5%  RegExp: ^(?:@)
+      1    0.0%    0.5%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.5%  RegExp: [ \t]+$
+      1    0.0%    0.5%  LazyCompile: *yy.locInfo C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:42:25
+      1    0.0%    0.5%  LazyCompile: *vary C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\vary\index.js:133:15
+      1    0.0%    0.5%  LazyCompile: *toString buffer.js:776:46
+      1    0.0%    0.5%  LazyCompile: *shouldSetCookie C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:464:29
+      1    0.0%    0.5%  LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+      1    0.0%    0.5%  LazyCompile: *replaceStack C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:892:38
+      1    0.0%    0.5%  LazyCompile: *removeListener events.js:512:28
+      1    0.0%    0.5%  LazyCompile: *readableAddChunk internal/streams/readable.js:231:26
+      1    0.0%    0.5%  LazyCompile: *readFileAfterOpen fs.js:278:27
+      1    0.0%    0.5%  LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1    0.0%    0.5%  LazyCompile: *pushContext C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:437:36
+      1    0.0%    0.5%  LazyCompile: *push C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:868:22
+      1    0.0%    0.5%  LazyCompile: *protocol C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\request.js:306:48
+      1    0.0%    0.5%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      1    0.0%    0.5%  LazyCompile: *preferredEncodings C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\negotiator\lib\encoding.js:138:28
+      1    0.0%    0.5%  LazyCompile: *onwrite internal/streams/writable.js:394:17
+      1    0.0%    0.5%  LazyCompile: *onResponseHeaders C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:140:47
+      1    0.0%    0.5%  LazyCompile: *objectLiteral C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:123:40
+      1    0.0%    0.5%  LazyCompile: *nextTick internal/process/task_queues.js:103:18
+      1    0.0%    0.5%  LazyCompile: *nextPart fs.js:1703:31
+      1    0.0%    0.5%  LazyCompile: *mergeSource C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:267:36
+      1    0.0%    0.5%  LazyCompile: *lookupProperty C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\runtime.js:118:44
+      1    0.0%    0.5%  LazyCompile: *lookup C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\view.js:104:40
+      1    0.0%    0.5%  LazyCompile: *invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      1    0.0%    0.5%  LazyCompile: *insert internal/timers.js:346:16
+      1    0.0%    0.5%  LazyCompile: *hidden internal/errors.js:286:25
+      1    0.0%    0.5%  LazyCompile: *getHeader _http_outgoing.js:575:57
+      1    0.0%    0.5%  LazyCompile: *fromString buffer.js:444:20
+      1    0.0%    0.5%  LazyCompile: *format C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\content-type\index.js:65:17
+      1    0.0%    0.5%  LazyCompile: *flow internal/streams/readable.js:998:14
+      1    0.0%    0.5%  LazyCompile: *etag C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\etag\index.js:70:15
+      1    0.0%    0.5%  LazyCompile: *end _http_outgoing.js:795:45
+      1    0.0%    0.5%  LazyCompile: *emit events.js:325:44
+      1    0.0%    0.5%  LazyCompile: *appendEscaped C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      1    0.0%    0.5%  LazyCompile: *appendContent C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:375:40
+      1    0.0%    0.5%  LazyCompile: *append C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\vary\index.js:38:17
+      1    0.0%    0.5%  LazyCompile: *_send _http_outgoing.js:307:49
+      1    0.0%    0.5%  LazyCompile: *SendStream C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\send\index.js:96:21
+      1    0.0%    0.5%  LazyCompile: *Readable.on internal/streams/readable.js:866:33
+      1    0.0%    0.5%  LazyCompile: *<anonymous> internal/fs/utils.js:636:42
+      1    0.0%    0.5%  LazyCompile: *<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/rutas/infoRuta.js:11:19
+      1    0.0%    0.5%  LazyCompile: *<anonymous> :1:20
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+    201    1.0%   98.5%  JavaScript
+      0    0.0%    0.0%  C++
+     72    0.4%   35.3%  GC
+  19976   99.0%          Shared libraries
+      3    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  18965   94.0%  C:\WINDOWS\SYSTEM32\ntdll.dll
+
+   1009    5.0%  C:\Program Files\nodejs\node.exe
+    583   57.8%    C:\Program Files\nodejs\node.exe
+     28    4.8%      LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     27   96.4%        LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     25   92.6%          LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     25  100.0%            LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+      2    7.4%          LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      2  100.0%            C:\Program Files\nodejs\node.exe
+      1    3.6%        LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     25    4.3%      LazyCompile: ~statSync fs.js:1119:18
+     25  100.0%        LazyCompile: ~tryStat C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\view.js:174:17
+     25  100.0%          LazyCompile: ~resolve C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\view.js:146:42
+     25  100.0%            LazyCompile: ~lookup C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\view.js:104:40
+     22    3.8%      LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     14   63.6%        LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      7   31.8%        LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      7  100.0%          LazyCompile: ~ret C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      7  100.0%            LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:82:43
+      1    4.5%        LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1  100.0%          LazyCompile: ~ret C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      1  100.0%            LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:82:43
+     19    3.3%      C:\Program Files\nodejs\node.exe
+      4   21.1%        LazyCompile: *appendEscaped C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      4  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   50.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1   25.0%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1   25.0%            LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      2   10.5%        LazyCompile: *setupParams C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1034:36
+      1   50.0%          LazyCompile: *setupHelperArgs C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1104:44
+      1  100.0%            LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      1   50.0%          LazyCompile: *invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      1  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   10.5%        LazyCompile: *invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      2  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1   50.0%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1   50.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   10.5%        LazyCompile: *header C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:759:29
+      2  100.0%          LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      2  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   10.5%        LazyCompile: *<anonymous> internal/fs/utils.js:636:42
+      1   50.0%          LazyCompile: *pipe C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\send\index.js:510:43
+      1  100.0%            LazyCompile: *serveStatic C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\serve-static\index.js:72:31
+      1   50.0%          LazyCompile: *hidden internal/errors.js:286:25
+      1  100.0%            LazyCompile: ~statSync fs.js:1119:18
+      1    5.3%        LazyCompile: ~toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\uid-safe\index.js:102:19
+      1  100.0%          LazyCompile: ~uidSync C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\uid-safe\index.js:75:18
+      1  100.0%            LazyCompile: ~generateSessionId C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:518:27
+      1    5.3%        LazyCompile: ~next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+      1  100.0%          LazyCompile: ~lex C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      1  100.0%            LazyCompile: ~lex C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:295:25
+      1    5.3%        LazyCompile: *store.generate C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:158:28
+      1  100.0%          LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+      1  100.0%            LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      1    5.3%        LazyCompile: *setupHelperArgs C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1104:44
+      1  100.0%          LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    5.3%        LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+      1  100.0%          LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+      1  100.0%            LazyCompile: ~parseWithoutProcessing C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      1    5.3%        LazyCompile: *expressInit C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\middleware\init.js:29:30
+      1  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      1  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      1    5.3%        LazyCompile: *etag C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\etag\index.js:70:15
+      1  100.0%          LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      1  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+     18    3.1%      LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+     18  100.0%        LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+     18  100.0%          LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+     15   83.3%            LazyCompile: *cookieParser C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\cookie-parser\index.js:44:32
+      3   16.7%            LazyCompile: ~cookieParser C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\cookie-parser\index.js:44:32
+     18    3.1%      LazyCompile: *authenticate C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\passport\lib\middleware\authenticate.js:94:31
+     18  100.0%        LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+     18  100.0%          LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+     12   66.7%            LazyCompile: *initialize C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\passport\lib\middleware\initialize.js:51:29
+      6   33.3%            LazyCompile: ~initialize C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\passport\lib\middleware\initialize.js:51:29
+     17    2.9%      LazyCompile: *setupHelperArgs C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1104:44
+     17  100.0%        LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+     17  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     13   76.5%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   11.8%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      2   11.8%            LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     16    2.7%      LazyCompile: *wrap C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+      7   43.8%        LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      7  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      5   71.4%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1   14.3%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1   14.3%            LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3   18.8%        LazyCompile: *resolvePath C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      3  100.0%          LazyCompile: *lookupOnContext C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:448:44
+      3  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   12.5%        LazyCompile: *wrap C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+      1   50.0%          LazyCompile: *resolvePath C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      1  100.0%            LazyCompile: *lookupOnContext C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:448:44
+      1   50.0%          LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      1  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   12.5%        LazyCompile: *appendEscaped C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      2  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1    6.3%        LazyCompile: *replaceStack C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:892:38
+      1  100.0%          LazyCompile: *append C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    6.3%        LazyCompile: *invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      1  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+     16    2.7%      LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+     13   81.3%        LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+      8   61.5%          LazyCompile: *parseWithoutProcessing C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      8  100.0%            LazyCompile: ~parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      4   30.8%          LazyCompile: ~parseWithoutProcessing C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      4  100.0%            LazyCompile: ~parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      1    7.7%          LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      1  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      3   18.8%        LazyCompile: *lex C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      3  100.0%          LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+      2   66.7%            LazyCompile: *parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      1   33.3%            LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     15    2.6%      LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      9   60.0%        LazyCompile: *handle C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:136:31
+      5   55.6%          LazyCompile: ~router C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:46:18
+      5  100.0%            LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      4   44.4%          LazyCompile: *router C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:46:18
+      4  100.0%            LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      2   13.3%        LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+      2  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      2  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      2   13.3%        LazyCompile: *cookieParser C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\cookie-parser\index.js:44:32
+      2  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      2  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      1    6.7%        LazyCompile: ~urlencodedParser C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\body-parser\lib\types\urlencoded.js:79:36
+      1  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      1  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      1    6.7%        LazyCompile: ~error C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\serve-static\index.js:115:39
+      1  100.0%          LazyCompile: *emit events.js:325:44
+      1  100.0%            LazyCompile: *onstat C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\send\index.js:721:33
+     13    2.2%      LazyCompile: *resolvePath C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+     12   92.3%        LazyCompile: *lookupOnContext C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:448:44
+     12  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     10   83.3%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   16.7%            LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1    7.7%        LazyCompile: ~lookupOnContext C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:448:44
+      1  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     13    2.2%      LazyCompile: *compression C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:59:31
+     13  100.0%        LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+     13  100.0%          LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+     13  100.0%            LazyCompile: *expressInit C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\middleware\init.js:29:30
+     12    2.1%      LazyCompile: *castChunk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:52:19
+     12  100.0%        LazyCompile: *generateList C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:143:38
+      6   50.0%          LazyCompile: *setupHelperArgs C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:1104:44
+      6  100.0%            LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      5   41.7%          LazyCompile: *invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+      5  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1    8.3%          LazyCompile: ~functionCall C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:113:38
+      1  100.0%            LazyCompile: ~invokePartial C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:725:40
+     11    1.9%      LazyCompile: *resOnFinish _http_server.js:760:21
+      8   72.7%        LazyCompile: *emit events.js:325:44
+      8  100.0%          LazyCompile: ~onFinish _http_outgoing.js:790:18
+      5   62.5%            LazyCompile: *afterWrite internal/streams/writable.js:456:20
+      3   37.5%            LazyCompile: *callback internal/streams/writable.js:511:44
+      3   27.3%        LazyCompile: *onFinish _http_outgoing.js:790:18
+      3  100.0%          LazyCompile: *afterWriteTick internal/streams/writable.js:451:24
+      3  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      9    1.5%      LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1   11.1%        Script: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-SA3HBHIK.mjs:1:63044
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-SA3HBHIK.mjs:1:63370
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-R7YSXE5N.mjs:1:16710
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-R7YSXE5N.mjs:1:78500
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PSLVEIW3.mjs:1:84737
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PSLVEIW3.mjs:1:85267
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PFEEQGT6.mjs:1:5656
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-PFEEQGT6.mjs:1:5935
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-OKDWKHRN.mjs:1:725
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-OKDWKHRN.mjs:1:5700
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-B3SKVPWV.mjs:14:4221
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-6PI2VFHB.mjs:1:10692
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-6PI2VFHB.mjs:1:44017
+      1   11.1%        LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-46GO55FO.mjs:1:35097
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-FM3PKIKM.mjs:1:195
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/node_modules/@faker-js/faker/dist/esm/chunk-46GO55FO.mjs:1:86910
+      9    1.5%      LazyCompile: *store.generate C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:158:28
+      9  100.0%        LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+      9  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      9  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      9    1.5%      LazyCompile: *readFile fs.js:319:18
+      7   77.8%        LazyCompile: *middleware C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:32:20
+      7  100.0%          LazyCompile: *<anonymous> file:///C:/Users/CFHD3/Desktop/CURSO/Backend/Presentaciones/Presentacion32/nodeServer/rutas/infoRuta.js:11:19
+      4   57.1%            LazyCompile: *dispatch C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\route.js:98:45
+      3   42.9%            LazyCompile: *handle C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\layer.js:86:49
+      1   11.1%        LazyCompile: ~render_file C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:62:23
+      1  100.0%          LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:189:43
+      1  100.0%            LazyCompile: ~readFileAfterOpen fs.js:278:27
+      1   11.1%        LazyCompile: *readFileAfterOpen fs.js:278:27
+      8    1.4%      LazyCompile: ~moduleStrategy internal/modules/esm/translators.js:136:56
+      8  100.0%        C:\Program Files\nodejs\node.exe
+      7    1.2%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:969:18
+      7  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1022:37
+      7  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1077:37
+      7  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:921:33
+      7    1.2%      LazyCompile: ~stat internal/modules/cjs/loader.js:133:14
+      4   57.1%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      4  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:801:35
+      4  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:709:24
+      3   42.9%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:339:17
+      3  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:355:23
+      3  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:449:28
+      7    1.2%      LazyCompile: ~compression C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:59:31
+      6   85.7%        LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      6  100.0%          LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      5   83.3%            LazyCompile: ~expressInit C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\middleware\init.js:29:30
+      1   16.7%            LazyCompile: *expressInit C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\middleware\init.js:29:30
+      1   14.3%        LazyCompile: ~handle C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      1  100.0%            LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:275:64
+      7    1.2%      LazyCompile: *writeHead _http_server.js:254:19
+      7  100.0%        LazyCompile: *writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      6   85.7%          LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      6  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      1   14.3%          LazyCompile: *writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader _http_server.js:249:68
+      7    1.2%      LazyCompile: *shouldSetCookie C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:464:29
+      7  100.0%        LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:220:28
+      5   71.4%          LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      5  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      1   14.3%          LazyCompile: ~writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader _http_server.js:249:68
+      1   14.3%          LazyCompile: *writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader _http_server.js:249:68
+      7    1.2%      LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      4   57.1%        LazyCompile: ~done C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:1011:27
+      4  100.0%          LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:94:33
+      4  100.0%            LazyCompile: ~done C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\async.js:71:29
+      3   42.9%        LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      7    1.2%      LazyCompile: *header C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:759:29
+      7  100.0%        LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      4   57.1%          LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      3   42.9%          LazyCompile: ~done C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:1011:27
+      3  100.0%            LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:94:33
+      7    1.2%      LazyCompile: *hash C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:596:14
+      6   85.7%        LazyCompile: *session C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:179:26
+      6  100.0%          LazyCompile: *trim_prefix C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:288:23
+      6  100.0%            LazyCompile: *next C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\router\index.js:176:16
+      1   14.3%        LazyCompile: ~isModified C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:425:24
+      1  100.0%          LazyCompile: ~shouldSave C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express-session\index.js:440:24
+      1  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      6    1.0%      LazyCompile: ~writevGeneric internal/stream_base_commons.js:118:23
+      6  100.0%        LazyCompile: ~Socket._writeGeneric net.js:759:42
+      6  100.0%          LazyCompile: ~Socket._writev net.js:791:36
+      6  100.0%            LazyCompile: ~doWrite internal/streams/writable.js:367:17
+      6    1.0%      LazyCompile: ~parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\content-type\index.js:106:16
+      6  100.0%        LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      4   66.7%          LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   33.3%          LazyCompile: ~done C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:1011:27
+      2  100.0%            LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:94:33
+      6    1.0%      LazyCompile: *setWriteHeadHeaders C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:105:30
+      3   50.0%        LazyCompile: *writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      2   66.7%          LazyCompile: ~_implicitHeader _http_server.js:249:68
+      2  100.0%            LazyCompile: ~end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      1   33.3%          LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      1  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      2   33.3%        LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      2  100.0%          LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      2  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1   16.7%        LazyCompile: ~writeHead C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\on-headers\index.js:28:29
+      1  100.0%          LazyCompile: ~_implicitHeader _http_server.js:249:68
+      1  100.0%            LazyCompile: ~end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      6    1.0%      LazyCompile: *replaceStack C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:892:38
+      5   83.3%        LazyCompile: *append C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      5  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      5  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1   16.7%        LazyCompile: ~append C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      6    1.0%      LazyCompile: *invokeAmbiguous C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:699:44
+      6  100.0%        LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      3   50.0%          LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      3  100.0%            LazyCompile: ~ret C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      3   50.0%          LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      6    1.0%      LazyCompile: *end _http_outgoing.js:795:45
+      4   66.7%        LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      4  100.0%          LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      4  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   33.3%        LazyCompile: ~end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      2  100.0%          LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      2  100.0%            LazyCompile: ~done C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:1011:27
+      6    1.0%      LazyCompile: *_send _http_outgoing.js:307:49
+      6  100.0%        LazyCompile: *end _http_outgoing.js:795:45
+      4   66.7%          LazyCompile: *end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      4  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      2   33.3%          LazyCompile: ~end C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\compression\index.js:92:28
+      2  100.0%            LazyCompile: *send C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\express\lib\response.js:107:25
+      6    1.0%      LazyCompile: *WhitespaceControl.Program C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:19:48
+      6  100.0%        LazyCompile: *accept C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\visitor.js:57:26
+      6  100.0%          LazyCompile: ~parse C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      5   83.3%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      1   16.7%            LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     23    2.3%    LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     21   91.3%      LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     18   85.7%        LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     16   88.9%          LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+     15   93.8%            LazyCompile: *SourceNode_walk C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:221:53
+      1    6.3%            LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      2   11.1%          LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      2  100.0%            C:\Program Files\nodejs\node.exe
+      3   14.3%        LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      3  100.0%          C:\Program Files\nodejs\node.exe
+      3  100.0%            LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2    8.7%      LazyCompile: ~SourceNode_toString C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\source-map\lib\source-node.js:318:61
+      2  100.0%        C:\Program Files\nodejs\node.exe
+      2  100.0%          LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+     11    1.1%    LazyCompile: *compile C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      8   72.7%      LazyCompile: *readFileAfterClose internal/fs/read_file_context.js:51:28
+      2   18.2%      LazyCompile: ~compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      2  100.0%        LazyCompile: ~ret C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      2  100.0%          LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:82:43
+      2  100.0%            LazyCompile: ~readFileAfterClose internal/fs/read_file_context.js:51:28
+      1    9.1%      LazyCompile: *compileInput C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+      1  100.0%        LazyCompile: ~ret C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+      1  100.0%          LazyCompile: ~<anonymous> C:\Users\CFHD3\Desktop\CURSO\Backend\Presentaciones\Presentacion32\nodeServer\node_modules\hbs\lib\hbs.js:82:43
+      1  100.0%            LazyCompile: ~readFileAfterClose internal/fs/read_file_context.js:51:28
+

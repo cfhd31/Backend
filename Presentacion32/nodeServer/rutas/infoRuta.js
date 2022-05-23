@@ -6,6 +6,7 @@ dotenv.config();
 const infoRuta = express.Router();
 
 const numCPUs = os.cpus().length
+//console.log(numCPUs)
 
 infoRuta.get("/", (req, res) => {
   let argumentos= [];
@@ -21,17 +22,19 @@ infoRuta.get("/", (req, res) => {
   const memoryRss = Math.round((memory / 1024 / 1024) * 100) / 100;
   const pid = process.pid;
 
-
-  res.render("info.hbs", {
-    argumentos: argumentos,
+const processData = {
+   argumentos: argumentos,
     path: pid,
     so: so,
     processId: processId,
     versionNode: versionNode,
     folder: folder,
     memory: memoryRss,
-    cpu: numCPUs,
-  });
+
+    cpu:numCPUs
+  };
+  //console.info(processData)
+  res.render("info.hbs", processData);
 });
 
 export default infoRuta;

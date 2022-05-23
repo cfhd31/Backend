@@ -18,7 +18,6 @@ function getRandom(cantidad) {
     }
    
     let repetidos = {};
-     
     valores.forEach(function(numero){
         repetidos[numero] = (repetidos[numero] || 0) + 1;
     });
