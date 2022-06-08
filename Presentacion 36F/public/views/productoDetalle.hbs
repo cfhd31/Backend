@@ -1,0 +1,34 @@
+{{> headers title="Detalle del Producto" logo="../eve0.png"}}
+
+<div class="table-responsive">
+  <div class="container">
+    <h2 class="text-center" style="color: rgb(0, 0, 0)">Detalle del Producto</h2>
+
+    {{#if error}} 
+        {{mensaje}}
+        <a href="/productos" class="btn btn-dark btn-block my-2">Volver</a>
+    {{else}} 
+      <div class="card border mx-auto" style="width:400px">
+        <img src="{{producto.foto}}" class="card-img-top" alt="{{producto.foto}}"/>
+        <div class="card-body">
+          <h4 class="card-title">{{producto.nombre}}</h4>
+          <h5>Codigo: {{producto.codigo}}</h5>
+          <p class="card-text">{{producto.descripcion}}</p>
+          <span class="float-end price-hp">Precio: {{producto.precio}}</span>
+          <p class="new-price">Precio: <span>${{producto.precio}}</span></p>
+          
+          <div class="text-center my-4">
+            <button type="button" onclick="agregar('{{producto.id}}')" class="btn btn-primary">
+              <i class="fas fa-shopping-cart"> Agregar Carrito </i>
+            </button>
+            <button type="button" class="btn btn-primary" onclick="edit('{{producto.id}}')">Editar</button>
+            <a href="/" class="btn btn-dark btn-block my-2">Volver</a>
+          </div>
+        </div>
+      </div>
+    {{/if}} 
+  </div>
+</div>
+{{> footer }}
+
+
