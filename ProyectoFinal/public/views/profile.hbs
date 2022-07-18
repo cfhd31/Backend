@@ -1,0 +1,54 @@
+{{> headers title="Perfil"}}
+
+<section class="user-profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"><h1>Perfil de usuario</h1></div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="text-center">
+            <img alt="profile" class="avatar img-circle img-thumbnail" src="./uploads/{{user.avatar}}">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="tab-content">
+            <form class="form" action="##" method="post" id="registrationForm">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label for="first_name"><h4>Nombre</h4></label>
+                  <input type="text" class="form-control" name="first_name" id="first_name" value ={{user.name}} title="enter your first name if any." />
+                </div>
+                <div class="col-sm-12">
+                  <label for="last_name"><h4>Apellido</h4></label>
+                  <input type="text" class="form-control" name="last_name" id="last_name" value={{user.lastName}} title="enter your last name if any." />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label for="phone"><h4>Edad</h4></label>
+                  <input type="text" class="form-control" name="number" id="age" value=  {{user.age}} title="enter your phone number if any." />
+                </div>
+                <div class="col-sm-12">
+                  <label for="mobile"><h4>Cel</h4></label>
+                  <input type="text" class="form-control" name="mobile" id="mobile" value={{user.phone}}  title="enter your mobile number if any." />
+                </div>
+                <div class="col-sm-12">
+                  <label for="email"><h4>Email</h4></label>
+                  <input type="email" class="form-control" name="email" id="email" value={{user.email}}/>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label for="email"><h4>Address</h4></label>
+                  <input type="email" class="form-control" id="location" value={{user.address}} title="enter a location" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+{{> footer}}
